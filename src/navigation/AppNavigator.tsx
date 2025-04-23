@@ -13,6 +13,7 @@ import CommunityPage from "../pages/community/Community";
 import JournalPage from "../pages/journal/Journal";
 import Profile from "../pages/profile/Profile";
 import AuthCallback from "../pages/auth/AuthCallback";
+import Journal from '../pages/journal/Journal';
 
 const AppNavigator = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -42,6 +43,8 @@ const AppNavigator = () => {
       <Routes>
         <Route path="/auth/callback" element={<AuthCallback />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+
         <Route 
           path="/" 
           element={

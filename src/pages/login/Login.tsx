@@ -39,6 +39,7 @@ const Login = () => {
         title: "Success",
         description: "Logged in successfully",
       });
+      navigate('/home'); // 🔥 Aquí redirige al Home
     } catch (error: any) {
       toast({
         title: "Error",
@@ -49,7 +50,7 @@ const Login = () => {
       setIsLoading(false);
     }
   };
-
+  
   const handleEmailSignUp = async (e: React.FormEvent) => {
     e.preventDefault();
     if (password !== confirmPassword) {
